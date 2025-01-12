@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container{
+    width: 100%;
+    justify-items: center;
+}
+
+.title{
+    height: 4rem;
+    width: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #c04848;
+    border-radius: 0.5rem;
+}
+
+.title h1{
+    size: 2rem;
+    color:#300030;
+    font-family: "Roboto Condensed", serif;
+    text-align: center;
+}
+
+.messages{
+    width: 80%;
+    height: 70vh;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #c04848;
+    border-radius: 0.5rem;
+}
+
+.list{
+    list-style: none;
+}
+
+.list li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list_message{
+    width: 75%;
+    font-size: 1rem;
+    color: #300030;
+    font-family: "Montserrat", serif;
+}
+
+.list_date{
+    font-size: 0.7rem;
+    width: 25%;
+    text-align: right;
+    color: #300030;
+    font-family: "Montserrat", serif;
+}
+
+.form{
+    width: 80%;
+    height: 3rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #c04848;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form input{
+    background-color: #f07241;
+    width: 75%;
+    padding: 5px;
+    color: #300030;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    border-style: none;
+    
+}
+
+.form button{
+    background-color: #f07241;
+    width: 80px;
+    padding: 5px;
+    color: #300030;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    border-style: none;
+}
+
+input::placeholder{
+    color: #300030;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+}
