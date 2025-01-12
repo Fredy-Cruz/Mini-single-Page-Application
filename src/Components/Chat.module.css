@@ -93,3 +93,14 @@ input::placeholder{
     font-family: "Montserrat", serif;
     font-size: 1rem;
 }
+
+.clearButton{
+    background-color: #c04848;
+    width: 300px;
+    padding: 5px;
+    color: #300030;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+}

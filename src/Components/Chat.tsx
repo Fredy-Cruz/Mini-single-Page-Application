@@ -1,3 +1,4 @@
+//Importaciones
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase-config";
 import { ref, onValue, push, set } from "firebase/database";
@@ -11,7 +12,8 @@ interface Message {
 }
 
 const Chat: React.FC = () => {
-  const [messages, setMessages] = useState<Message[]>([]);
+  
+  const [messages, setMessages] = useState<Message[]>([]); //Coleccion de Mensajes
   const [newMessage, setNewMessage] = useState("");
 
   const messagesRef = ref(db, "messages"); // Referencia a la colección de mensajes
@@ -45,6 +47,14 @@ const Chat: React.FC = () => {
     }
   };
 
+  const handleClearMessages = async () => {
+    try {
+      setMessages([]); // Limpia el estado local
+    } catch (error) {
+      console.error("Error al vaciar los mensajes:", error);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -75,6 +85,10 @@ const Chat: React.FC = () => {
         />
         <button type="submit">Enviar</button>
       </form>
+
+      <button onClick={handleClearMessages} className={styles.clearButton}>
+        Vaciar Mensajes
+      </button>
     </div>
   );
 };
